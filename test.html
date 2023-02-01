@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .outer_div {
+        width: 100vw;
+        height: 100vh;
+        /* background: rgb(190, 180, 180, 0.19) 0% 0% no-repeat padding-box; */
+        background: rgb(0, 0, 0, 0.32) 0% 0% no-repeat padding-box;
+
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .main_div {
+        width: 600px;
+        height: 400px;
+        opacity: 1;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10%;
+      }
+
+      .child_one {
+        width: 300px;
+        height: 250px;
+        /* UI Properties */
+        background: #f5f5f5 0% 0% no-repeat padding-box;
+        border-radius: 21px;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .child_two {
+        width: 280px;
+        height: 280px;
+        /* UI Properties */
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 5px 15px #00000029;
+        border: 1px solid #e4e4e4;
+        border-radius: 6px;
+        opacity: 1;
+        /* background-color: rgb(255, 221, 0); */
+        margin-left: -6%;
+      }
+
+      .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 18px;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .input_txt {
+        margin-top: 19px;
+      }
+      .btn2 {
+        margin-top: 19px;
+      }
+
+      .btn-FG {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+        margin: 0 auto;
+        width: 70%;
+      }
+      .btn-F {
+        width: 69px;
+        height: 70%;
+        /* UI Properties */
+        background: #4266b2 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        opacity: 1;
+      }
+      .btn-G {
+        width: 69px;
+        height: 70%;
+        /* UI Properties */
+        background: #f5f5f5 0% 0% no-repeat padding-box;
+        border: 1px solid #e4e4e4;
+        border-radius: 3px;
+        opacity: 1;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="outer_div">
+      <div class="main_div">
+        <div class="child_one">
+          <img
+            src="assets/2766594.png"
+            alt="alternatetext"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="child_two">
+          <div class="btn">
+            <div>LOGIN</div>
+            <div>SIGNUP</div>
+          </div>
+          <div class="input">
+            <input
+              class="input_txt"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="emailId"
+            />
+            <input
+              class="input_txt"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Password"
+            />
+            <button class="btn2">LOGIN</button>
+            <p class="btn2">___________OR__________</p>
+          </div>
+          <div class="btn-FG">
+            <button class="btn-F">Facebook</button>
+            <button class="btn-G">Google</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
